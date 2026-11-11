@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-anton: 'Anton', sans-serif;
+  --font-bebas: 'Bebas Neue', sans-serif;
+
+  /* Frame16 Darkroom Palette */
+  --color-void: #09090b;
+  --color-surface-1: #121215;
+  --color-surface-2: #18181b;
+  --color-surface-3: #202024;
+  --color-panel: #27272a;
+  --color-panel-light: #3f3f46;
+  --color-platinum: #f4f4f5;
+  --color-ash: #a1a1aa;
+  --color-zinc-dim: #71717a;
+  --color-rubec-gold: #D4AF37;
+  --color-optical-red: #ef4444;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-void);
+  color: var(--color-platinum);
+}
+
+body {
+  background-color: var(--color-void);
+  color: var(--color-platinum);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.9);
+  color: #09090b;
+}
+
+/* Custom Studio Darkroom Scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-panel) var(--color-void);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-void);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-panel);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-panel-light);
+}
