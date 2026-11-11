@@ -24,7 +24,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="font-['Plus_Jakarta_Sans',sans-serif] text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.05]"
           >
-            Design thumbnails that actually get clicked.
+            TESTING AN UPDATE. Design thumbnails that actually get clicked.
           </motion.h1>
 
           <motion.p
